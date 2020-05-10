@@ -1,0 +1,103 @@
+---
+title: "Kundundersökning 2019"
+author: "Peder Lewenhaupt"
+date: "null"
+output: 
+  powerpoint_presentation:
+    fig_height: 6
+    fig_width: 12
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r Load data, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr)
+library(scales)
+
+load(file = "freq_kontakt.RData")
+load(file = "kontaktchart.RData")
+load(file = "freq_service.RData")
+load(file = "servicechart.RData")
+load(file = "freq_forvantan_con.RData")
+load(file = "informationchart.RData")
+load(file = "freq_forvantan.RData")
+load(file = "forvantanchart.RData")
+load(file = "freq_svar.RData")
+load(file = "svarchart.RData")
+load(file = "freq_kon_year.RData")
+load(file = "kon_grid.RData")
+
+load(file = "freq_kon_con.RData")
+load(file = "konchart_con.RData")
+load(file = "freq_service_con.RData")
+load(file = "servicechart_con.RData")
+load(file = "freq_information_con.RData")
+load(file = "informationchart_con.RData")
+load(file = "freq_forvantan_con.RData")
+load(file = "forvantanchart_con.RData")
+load(file = "freq_svar_con.RData")
+load(file = "svarchart_con.RData")
+
+```
+
+## Sammanfattning
+
+## Könsfördelning
+```{r Konsfordelning, echo=FALSE}
+kon_grid
+```
+
+## Kontaktsätt
+```{r Kontaktsatt, echo=FALSE}
+kontaktchart
+```
+
+## Kontaktsätt per kön
+```{r Kontaktsatt_per_kon, echo=FALSE}
+kontaktchart_kon
+```
+
+## Service
+```{r Service, echo=FALSE}
+servicechart
+```
+
+## Service per kön
+```{r Service_per_kon, echo=FALSE}
+servicechart_kon
+```
+
+## Förväntan
+```{r Forvantan, echo=FALSE}
+forvantanchart
+```
+
+## Förväntan per kön
+```{r Forvantan_per_kon, echo=FALSE}
+forvantanchart_kon
+```
+
+## Svar
+```{r Svar, echo=FALSE}
+svarchart
+```
+
+## Svar per kön
+```{r Svar_per_kon, echo=FALSE}
+svarchart_kon
+```
+
+## Information
+```{r Information, echo=FALSE}
+informationchart
+```
+
+## Information per kön
+```{r Information_per_kon, echo=FALSE}
+informationchart_kon
+```
+
+
+
+
