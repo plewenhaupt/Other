@@ -102,11 +102,11 @@ most_different = findall(x -> x == max_distance, gower_dist)
 #Remove duplicates of permutations
 diffs = []
 
-#Get the rows from the dataframe corresponding to the cartesian indices, sorted on fm_pin
+#Get the rows from the dataframe corresponding to the cartesian indices, sorted on Id
 for i in 1:length(most_different)
     x = most_different[i][1]
     y = most_different[i][2]
-    df = sort(data[[x,y], :], :fm_pin)
+    df = sort(data[[x,y], :], :Id)
     push!(diffs, df)
 end
 
