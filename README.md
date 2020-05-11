@@ -1,2 +1,2 @@
 # Other
-Contains fun and enlightening projects from different times and places
+Contains fun projects from different times and places
